@@ -69,7 +69,7 @@ function event3a() {
 //This was the right path, you have 3 options, the frist is the first win, the second kills you and the third continues
 function event3b() {
     alert("You notice paths, one to the right which is leads to a door labled as a bathroom, one to the left, which leads to the foyer and a path straight foward into the darkness.");
-    choice4 = +prompt("Do you 1: enter the bathroom door \n2: go into the foyer \nor\3: continue into the darkness?");
+    choice4 = +prompt("Do you 1: enter the bathroom door \n2: go into the foyer \nor\n3: continue into the darkness?");
     if (choice4 == 1) {
         alert("You enter the right door, and you see a dirty bathroom.");
         win1();
@@ -88,10 +88,11 @@ function event3b() {
 //This is the path that continues, one option kills you, the other continues
 function event4() {
     alert("You see a book open on a table and a die right next to it.");
-    choice5 = +prompt("Do you 1: read the book \nor\2: roll the die??");
+    choice5 = +prompt("Do you 1: read the book \nor\n2: roll the die??");
     if (choice5 == 1) {
         alert("As you look down at the book, and start to read the one sentence . . . you should have rolled the die.");
         alert("You are suddenly yanked into the darkness and your life ends. GAME OVER!");
+        startGame();
     } else if (choice5 == 2){
         /*You roll a die, and get a random number that gives you candy, depending on how much of the candy that you eat,
         *you die or win.
