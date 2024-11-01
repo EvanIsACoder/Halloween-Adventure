@@ -25,7 +25,7 @@ function event1() {
         alert("After immense pain, you free yourself.");
     } else if (choice1 == 2){
         alert("The nail has been poisoned! After suffering from excrutiating pain, you die. GAME OVER!");
-        event1();
+        startGame();
     }
 }
 
@@ -46,10 +46,10 @@ function event3a() {
     choice3 = +prompt("Do you 1, continue to go down the stairway or 2, go through the door?");
     if (choice3 == 1) {
         alert("You trip on a missing step, tumbling down, every bone in your body shatters and you die.");
-        event1();
+        startGame();
     } else if (choice3 == 2){
         alert("The door closes behind you and disappears, all is left is a long hall way with an exit sign at the end . . . you run to the door, but it disappears and a skin walker appears at the other end.");
-        event1();
+        startGame();
     }
 }
 
@@ -61,7 +61,7 @@ function event3b() {
     } else if (choice4 == 2){
         alert("You enter the left door, and enter the main foyer of the aslyum, all looks calm, but then . . .");
         alert("The lights go on with an intense brightness and you feel a searing pain. Game OVER!!!!!");
-        event1();
+        startGame();
     }
 }
 
@@ -69,7 +69,6 @@ function event4() {
     alert("The mirror looks off, as you walk closer, it starts to suck you in. . .");
     alert(`Before you can comprehend what is happening, you are back in your class, you have a final exam and you haven't studied, good luck ${player}.`);
 }
-
 
 
 
