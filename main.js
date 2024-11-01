@@ -11,7 +11,7 @@ function main() {
     event1();
     event2();
     //event3 is a route with that branches from event2 so it isn't called here
-    //The rest of the events are just called from previous events
+    //The rest of the events are just called from the previous events.
 }
 
 //Starts game by explaing the game and asking for the player's name
